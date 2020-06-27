@@ -3,13 +3,13 @@
     <mat-card class="project-card" *ngFor="let proj of projects">
       <mat-card-header>
         <mat-card-title>{{proj.name}}</mat-card-title>
-        <mat-card-subtitle></mat-card-subtitle>
+        <mat-card-subtitle>{{proj.summary}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>
-        </p>
+        <p></p>
       </mat-card-content>
       <mat-card-actions>
+        <button *ngIf="proj.url" mat-button>See</button>
         <button mat-button>Info</button>
         <button mat-button>Source Code</button>
       </mat-card-actions>
