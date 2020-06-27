@@ -1,12 +1,8 @@
-/* mat-grid-list {
-    background-color: black;
+.project-card {
+    width: 15rem;
+    margin: 2rem;
 }
 
-mat-grid-tile {
-    background-color: black;
-    color: white;
+.projects-container {
+    display: flex;
 }
-
-mat-grid-tile a {
-    color: white;
-} */
