@@ -1,8 +1,11 @@
-.project-card {
-    width: 15rem;
-    margin: 2rem;
+.projects-container {
+    display: inline-block;
+    flex-wrap: wrap;
 }
 
-.projects-container {
-    display: flex;
+.project-card {
+    float: left;
+    margin: 2rem;
+    width: 20rem;
+    height: 10rem;
 }
