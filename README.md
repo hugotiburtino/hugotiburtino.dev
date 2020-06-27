@@ -7,3 +7,5 @@ Projects and skills as full stack developer
 * Angular Material 9.2
 * Bootstrap 4
 
+## Versioning
+My own
