@@ -1,0 +1,32 @@
+[
+    {
+        "name": "CSS Beautifier",
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/css-beautifier/",
+        "srcCodeUrl": "https://github.com/hugotiburtino/css-beautifier",
+        "summary": "Firefox extension that formats and colors CSS files"
+    },
+    {
+        "name": "Jankenpon",
+        "url": "",
+        "srcCodeUrl": "https://github.com/hugotiburtino/jankenpon",
+        "summary": "Rock paper scissors object oriented programmed in Python"
+    },
+    {
+        "name": "Incident Dashboard",
+        "url": "",
+        "srcCodeUrl": "https://github.com/hugotiburtino/incident-dashboard",
+        "summary": "Dashboard to report incidents written in Java"
+    },
+    {
+        "name": "Memory Game",
+        "url": "http://hugotiburtino-memorygame.s3-website.eu-central-1.amazonaws.com/",
+        "srcCodeUrl": "https://github.com/hugotiburtino/memorygame",
+        "summary": "Classical memory game written in vanilla JS"
+    },
+    {
+        "name": "Search Panel",
+        "url": "",
+        "srcCodeUrl": "https://github.com/hugotiburtino/search-panel",
+        "summary": "Angular app that displays results from different search engines in one place"
+    }
+]

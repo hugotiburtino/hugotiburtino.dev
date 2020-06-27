@@ -1,0 +1,14 @@
+<main role="main">
+  <mat-grid-list cols="2" rowHeight="10rem">
+    <mat-grid-tile
+      *ngFor="let proj of projects"
+      colspan="1"
+      rowspan="1">
+        <a 
+          *ngIf="proj.url; else elseBlock" 
+          [href]="proj.url" target="_blank"
+        >{{proj.name}}</a>
+        <ng-template #elseBlock>{{proj.name}}</ng-template>
+      </mat-grid-tile>
+  </mat-grid-list>  
+</main>
