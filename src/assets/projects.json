@@ -24,9 +24,9 @@
         "summary": "Classical memory game written in vanilla JS"
     },
     {
-        "name": "Search Panel",
+        "name": "jamra",
         "url": "",
-        "srcCodeUrl": "https://github.com/hugotiburtino/search-panel",
-        "summary": "Angular app that displays results from different search engines in one place"
+        "srcCodeUrl": "https://github.com/hugotiburtino/jamra",
+        "summary": "Just Another Mock Rest API"
     }
 ]
