@@ -32,4 +32,16 @@ export class ProjectsPanelComponent implements OnInit {
     });
   }
 
+  
+  onClick(button: HTMLButtonElement, project) {
+    /* TODO: change "See", "Info" and "Source Code" for values like numbers
+             that way we can be more flexibel with names at view */
+    if (button.innerText == "See") {
+      window.open(project.url, "_blank").focus()
+    } else if (button.innerText == "Info") {
+      // Implementme
+    } else if (button.innerText == "Source Code") {
+      window.open(project.srcCodeUrl, "_blank").focus()
+    } 
+  }
 }
