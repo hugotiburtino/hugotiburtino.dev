@@ -9,9 +9,9 @@
         <p></p>
       </mat-card-content-->
       <mat-card-actions (click)="onClick($event.target, proj)">
-        <button *ngIf="proj.url" mat-button>See</button>
-        <!--button mat-button>Info</button-->
-        <button mat-button>Source Code</button>
+        <button value="0" *ngIf="proj.url" mat-button>See</button>
+        <!-- value="1" button mat-button>Info</button-->
+        <button value="2" mat-button>Source Code</button>
       </mat-card-actions>
     </mat-card>
   </div>
