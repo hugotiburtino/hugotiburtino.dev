@@ -7,21 +7,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTabsModule,
-    MatDividerModule, 
-    MatCardModule
-  ],
   exports: [
     CommonModule,
     BrowserAnimationsModule,
@@ -30,7 +20,7 @@ import { MatCardModule } from '@angular/material/card'
     MatButtonModule,
     MatTabsModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
   ]
 })
 export class MaterialModule { }
