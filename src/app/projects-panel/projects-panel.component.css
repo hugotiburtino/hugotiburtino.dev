@@ -1,10 +1,4 @@
-.projects-container {
-    display: inline-block;
-    flex-wrap: wrap;
-}
-
 .project-card {
-    float: left;
     margin: 2rem;
     width: 18rem;
     height: 10rem;
