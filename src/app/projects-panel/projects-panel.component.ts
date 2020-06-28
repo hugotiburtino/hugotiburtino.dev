@@ -32,16 +32,23 @@ export class ProjectsPanelComponent implements OnInit {
     });
   }
 
-  
-  onClick(button: HTMLButtonElement, project) {
-    /* TODO: change "See", "Info" and "Source Code" for values like numbers
-             that way we can be more flexibel with names at view */
-    if (button.innerText == "See") {
-      window.open(project.url, "_blank").focus()
-    } else if (button.innerText == "Info") {
+  /**
+   * Handles the action button clicks of a project card
+   * @param target The button clicked
+   * Note: since Angular Material wraps text of the button element
+   * into a node by itself, we need to find the value of the button first
+   * See const value below
+   * @param project The project whose card button was clicked
+   */
+  onClick(target, project) {
+    const value: number = target.value | target.parentElement.value
+    console.log(value)
+    if (value === 0) {
+      window.open(project.url, '_blank').focus();
+    } else if (value === 1) {
       // Implementme
-    } else if (button.innerText == "Source Code") {
-      window.open(project.srcCodeUrl, "_blank").focus()
-    } 
+    } else if (value === 2) {
+      window.open(project.srcCodeUrl, '_blank').focus();
+    }
   }
 }
