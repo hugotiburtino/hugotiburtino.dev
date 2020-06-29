@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MatCardModule } from '@angular/material/card';
     MatTabsModule,
     MatDividerModule,
     MatCardModule,
+    MatSidenavModule
   ]
 })
 export class MaterialModule { }
