@@ -12,6 +12,7 @@ import { ProjectsPanelComponent } from './projects-panel/projects-panel.componen
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { IdRefPipe } from './lib/idref.pipe';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { IdRefPipe } from './lib/idref.pipe';
     ProjectsPanelComponent,
     NavbarComponent,
     HeaderComponent,
-    IdRefPipe
+    IdRefPipe,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<mat-drawer-container class="" autosize>
+    <mat-drawer #drawer class="" mode="over">
+      <app-aboutme></app-aboutme>
+    </mat-drawer>
+    <app-header (aboutMeBarActive)="drawer.toggle()"></app-header>
+    <app-projects-panel></app-projects-panel>
+    <app-footer></app-footer>
+</mat-drawer-container>

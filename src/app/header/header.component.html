@@ -1,8 +1,11 @@
 <header>
   <mat-toolbar color="primary">  
     <mat-toolbar-row>
-      <h1>{{title}} <small>{{subtitle}}</small></h1>
+      <button (click)="showAboutMe()" mat-button>
+        <h1>{{title}} <small>{{subtitle}}</small></h1>
+      </button>
       <app-navbar></app-navbar>
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
+

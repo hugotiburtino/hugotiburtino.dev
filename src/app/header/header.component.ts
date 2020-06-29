@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +10,15 @@ export class HeaderComponent implements OnInit {
 
   title = 'Hugo Tiburtino';
   subtitle = '';
+  @Output() aboutMeBarActive = new EventEmitter<boolean>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showAboutMe() {
+    this.aboutMeBarActive.emit(true)
   }
 
 }
