@@ -24,11 +24,8 @@ export class ProjectsPanelComponent implements OnInit {
 
   ngOnInit(): void {
     // Get projects from ProjectService and add them to projects list
-    this.service.getProjects().subscribe(data => {
-      this.projects = [];
-      for (const project of data) {
-        this.projects.push(Project.factory(project));
-      }
+    this.service.getProjects().subscribe(projectsData => {
+      this.projects = projectsData;
     });
   }
 
