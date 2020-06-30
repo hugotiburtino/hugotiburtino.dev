@@ -1,1 +1,6 @@
-<p>aboutme works!</p>
+<h2>{{completeName}}</h2>
+<p>{{elevatorPitch}}</p>
+<h3>Programming Skills</h3>
+<mat-list role="list" *ngFor="let skill of skills">
+    <mat-list-item role="listitem">{{skill.subject}}</mat-list-item>
+</mat-list>
