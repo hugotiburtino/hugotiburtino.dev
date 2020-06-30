@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from '../lib/skill';
+import { AboutmeService } from '../services/aboutme.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  constructor() { }
+  completeName: string;
+
+  elevatorPitch: string;
+
+  skills: Skill[];
+
+  constructor(private service: AboutmeService) { }
 
   ngOnInit(): void {
+    this.service.getAboutme().subscribe(data => {
+      this.completeName = data.completeName;
+      this.elevatorPitch = data.elevatorPitch;
+      this.skills = data.skills;
+    });
   }
 
 }

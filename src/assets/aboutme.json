@@ -1,0 +1,54 @@
+{
+    "completeName": "Hugo Bezerra Tiburtino",
+    "elevatorPitch": "Full Stack Developer",
+    "skills": [
+        {
+            "subject": "Java"
+        },
+        {
+            "subject": "Python 3"
+        },
+        {
+            "subject": "JavaScript"
+        },
+        {
+            "subject": "HTML5"
+        },
+        {
+            "subject": "CSS3"
+        },
+        {
+            "subject": "Linux"
+        },
+        {
+            "subject": "Spring Boot"
+        },
+        {
+            "subject": "Flask"
+        },
+        {
+            "subject": "MuleSoft"
+        },
+        {
+            "subject": "Docker"
+        },
+        {
+            "subject": "Jenkins"
+        },
+        {
+            "subject": "RESTful API"
+        },
+        {
+            "subject": "Git"
+        },
+        {
+            "subject": "Bootstrap 4"
+        },
+        {
+            "subject": "Node.js"
+        },
+        {
+            "subject": "Angular"
+        }
+    ]
+}
