@@ -14,10 +14,12 @@
             "subject": "JavaScript"
         },
         {
-            "subject": "HTML5"
+            "subject": "HTML5",
+            "categories": [1]
         },
         {
-            "subject": "CSS3"
+            "subject": "CSS3",
+            "categories": [1]
         },
         {
             "subject": "Linux"
@@ -46,10 +48,12 @@
             "subject": "Git"
         },
         {
-            "subject": "Bootstrap 4"
+            "subject": "Bootstrap 4",
+            "categories": [1]
         },
         {
-            "subject": "Node.js"
+            "subject": "Node.js",
+            "categories": [0]
         },
         {
             "subject": "Angular",
