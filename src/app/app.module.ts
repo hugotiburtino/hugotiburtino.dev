@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { IdRefPipe } from './lib/idref.pipe';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     NavbarComponent,
     HeaderComponent,
     IdRefPipe,
-    AboutmeComponent
+    AboutmeComponent,
+    SkillsPanelComponent
   ],
   imports: [
     BrowserModule,
