@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Skill } from '../lib/skill';
+import { Aboutme } from '../lib/aboutme';
 
 @Injectable({
   providedIn: 'root'
@@ -16,13 +17,4 @@ export class AboutmeService {
   public getAboutme() {
     return this.http.get<Aboutme>('../../assets/aboutme.json');
   }
-}
-
-class Aboutme {
-  completeName: string;
-
-  elevatorPitch: string;
-
-  skills: Skill[];
-
 }
