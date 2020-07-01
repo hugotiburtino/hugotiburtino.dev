@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../lib/skill';
 import { AboutmeService } from '../services/aboutme.service';
 
 @Component({
@@ -13,15 +12,12 @@ export class AboutmeComponent implements OnInit {
 
   elevatorPitch: string;
 
-  skills: Skill[];
-
   constructor(private service: AboutmeService) { }
 
   ngOnInit(): void {
     this.service.getAboutme().subscribe(data => {
       this.completeName = data.completeName;
       this.elevatorPitch = data.elevatorPitch;
-      this.skills = data.skills;
     });
   }
 
