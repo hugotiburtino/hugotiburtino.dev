@@ -27,6 +27,6 @@
         "name": "jamra",
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/jamra",
-        "summary": "Just Another Mock Rest API"
+        "summary": "Just Another Mock Rest API - programmed with Flask"
     }
 ]

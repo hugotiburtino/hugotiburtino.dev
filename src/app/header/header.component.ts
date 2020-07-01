@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   }
 
   showAboutMe() {
-    this.aboutMeBarActive.emit(true)
+    this.aboutMeBarActive.emit(true);
   }
 
 }

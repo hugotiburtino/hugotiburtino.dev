@@ -23,10 +23,12 @@
             "subject": "Linux"
         },
         {
-            "subject": "Spring Boot"
+            "subject": "Spring Boot",
+            "categories": [0]
         },
         {
-            "subject": "Flask"
+            "subject": "Flask",
+            "categories": [0]
         },
         {
             "subject": "MuleSoft"
@@ -50,7 +52,8 @@
             "subject": "Node.js"
         },
         {
-            "subject": "Angular"
+            "subject": "Angular",
+            "categories": [1]
         }
     ]
 }

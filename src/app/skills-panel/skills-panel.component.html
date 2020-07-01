@@ -1,4 +1,15 @@
 <h3>Programming Skills</h3>
-<mat-list role="list" *ngFor="let skill of skills">
-    <mat-list-item role="listitem">{{skill.subject}}</mat-list-item>
+<mat-list role="list">
+    <mat-list-item role="listitem">Backend</mat-list-item>
+        <mat-chip-list>
+            <mat-chip *ngFor="let skill of backEndSkills">
+                {{skill.subject}}
+            </mat-chip>
+        </mat-chip-list>
+    <mat-list-item role="listitem">Frontend</mat-list-item>
+        <mat-chip-list>
+            <mat-chip *ngFor="let skill of frontEndSkills">
+                {{skill.subject}}
+            </mat-chip>
+        </mat-chip-list>
 </mat-list>

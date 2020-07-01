@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatListModule } from '@angular/material/list';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatSidenavModule,
     MatTooltipModule,
-    MatListModule
+    MatListModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }
