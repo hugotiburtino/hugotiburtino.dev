@@ -12,12 +12,18 @@ export class AboutmeComponent implements OnInit {
 
   elevatorPitch: string;
 
+  city: string;
+  
+  status: string;
+
   constructor(private service: AboutmeService) { }
 
   ngOnInit(): void {
     this.service.getAboutme().subscribe(data => {
       this.completeName = data.completeName;
       this.elevatorPitch = data.elevatorPitch;
+      this.city = data.city;
+      this.status = data.status;
     });
   }
 

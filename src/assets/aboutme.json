@@ -1,6 +1,8 @@
 {
     "completeName": "Hugo Bezerra Tiburtino",
-    "elevatorPitch": "Full Stack Developer",
+    "elevatorPitch": "Full Stack Developer <br> Angular, Spring Boot and Flask <br> MuleSoft Developer <br> Linux fan, open source enthusiast <br> Last but not least, PhD in Philosophy",
+    "city": "Munich",
+    "status": "Embracing DevOps",
     "skills": [
         {
             "subject": "Java"
