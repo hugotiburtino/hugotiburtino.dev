@@ -13,7 +13,7 @@ export class AboutmeComponent implements OnInit {
   elevatorPitch: string;
 
   city: string;
-  
+
   status: string;
 
   constructor(private service: AboutmeService) { }

@@ -1,9 +1,12 @@
+import { SkillCategory } from './skill-category.enum';
+
+
 export class Skill {
 
     subject: string;
-    categories: string[];
+    categories: SkillCategory[];
 
-    constructor(subject: string, categories?: string[]) {
+    constructor(subject: string, categories?: number[]) {
         this.subject = subject;
         this.categories = categories;
     }
