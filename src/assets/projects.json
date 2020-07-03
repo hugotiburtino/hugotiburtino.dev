@@ -4,7 +4,7 @@
         "url": "https://addons.mozilla.org/en-US/firefox/addon/css-beautifier/",
         "srcCodeUrl": "https://github.com/hugotiburtino/css-beautifier",
         "summary": "Firefox extension that formats and colors CSS files",
-        "techs": ["JavaScript", "Web Extension", "Jenkins"]
+        "techs": ["JavaScript", "Jenkins", "Jasmine"]
 
     },
     {
@@ -19,7 +19,7 @@
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/incident-dashboard",
         "summary": "Dashboard to report incidents",
-        "techs": ["Spring Boot", "ThymeLeaf", "MariaDB", "Java"]
+        "techs": ["Spring Boot", "ThymeLeaf", "Java", "Bootstrap 4"]
     },
     {
         "name": "Memory Game",
