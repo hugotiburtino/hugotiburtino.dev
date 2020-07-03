@@ -52,10 +52,6 @@
             "subject": "Linux"
         },
         {
-            "subject": "MuleSoft",
-            "categories": ["Back-end"]
-        },
-        {
             "subject": "RESTful API",
             "categories": ["Back-end"]
         },
@@ -116,6 +112,18 @@
         },        {
             "subject": "Clean coding",
             "categories": ["Best Practices"]
+        },
+        {
+            "subject": "MuleSoft",
+            "categories": ["ESB"]
+        },
+        {
+            "subject": "Anypoint Studio",
+            "categories": ["ESB"]
+        },
+        {
+            "subject": "Anypoint Platform",
+            "categories": ["ESB"]
         }
     ]
 }

@@ -4,5 +4,6 @@ export enum SkillCategory {
     CICD = 'CI/CD',
     BestPractices = 'Best Practices',
     TDD = 'TDD',
-    DBMS = 'DBMS'
+    DBMS = 'DBMS',
+    ESB = 'ESB'
 }
