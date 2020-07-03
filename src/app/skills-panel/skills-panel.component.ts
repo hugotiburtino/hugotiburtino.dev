@@ -12,8 +12,11 @@ export class SkillsPanelComponent implements OnInit {
 
   skills: Skill[];
   category = SkillCategory;
-  backEndSkills: Skill[];
-  frontEndSkills: Skill[];
+  /** Map of skills
+   * Key: Skill category
+   * Value: Array of skills
+   */
+  skillsMap = new Map();
 
   constructor(private service: AboutmeService) { }
 
@@ -23,14 +26,16 @@ export class SkillsPanelComponent implements OnInit {
       this.categorize();
     });
   }
-
+  // TODO: DOCSTRING
+  /**
+   * Method that fills up the Map of skills
+   */
   categorize() {
-    this.backEndSkills = this.skills.filter(sk =>
-      sk.categories && sk.categories.includes(this.category.Backend)
-      );
-    this.frontEndSkills = this.skills.filter(sk =>
-      sk.categories && sk.categories.includes(this.category.Frontend)
-      );
+    for (const item of Object.keys(this.category)) {
+      this.skillsMap.set(this.category[item], this.skills.filter(sk =>
+           sk.categories && sk.categories.includes(this.category[item])));
+    }
   }
+
 
 }

@@ -1,4 +1,8 @@
 export enum SkillCategory {
-    Backend,
-    Frontend
+    Backend = 'Back-end',
+    Frontend = 'Front-end',
+    CICD = 'CI/CD',
+    BestPractices = "Best Practices",
+    TDD = "TDD",
+    DBMS = "DBMS"
 }

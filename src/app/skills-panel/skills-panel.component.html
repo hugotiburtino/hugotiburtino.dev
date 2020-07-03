@@ -1,20 +1,11 @@
-<div class="container">
+<div class="container-fluid">
     <h2>Programming Skills</h2>
-    <mat-list role="list">
+    <mat-list role="list" *ngFor="let item of skillsMap | keyvalue">
         <div class="row d-flex justify-content-center">
             <mat-list-item class="d-flex justify-content-center" 
-            role="listitem">Backend</mat-list-item>
-            <mat-chip-list>
-                <mat-chip *ngFor="let skill of backEndSkills">
-                    {{skill.subject}}
-                </mat-chip>
-            </mat-chip-list>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <mat-list-item class="d-flex justify-content-center" 
-            role="listitem">Frontend</mat-list-item>
-            <mat-chip-list>
-                <mat-chip *ngFor="let skill of frontEndSkills">
+            role="listitem">{{item.key}}</mat-list-item>
+            <mat-chip-list >
+                <mat-chip color="primary" selected *ngFor="let skill of item.value">
                     {{skill.subject}}
                 </mat-chip>
             </mat-chip-list>
