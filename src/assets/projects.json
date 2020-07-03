@@ -3,30 +3,36 @@
         "name": "CSS Beautifier",
         "url": "https://addons.mozilla.org/en-US/firefox/addon/css-beautifier/",
         "srcCodeUrl": "https://github.com/hugotiburtino/css-beautifier",
-        "summary": "Firefox extension that formats and colors CSS files"
+        "summary": "Firefox extension that formats and colors CSS files",
+        "techs": ["JavaScript", "Web Extension", "Jenkins"]
+
     },
     {
         "name": "Jankenpon",
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/jankenpon",
-        "summary": "Rock paper scissors object oriented programmed in Python"
+        "summary": "Rock paper scissors object oriented programmed",
+        "techs": ["Python", "Docker"]
     },
     {
         "name": "Incident Dashboard",
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/incident-dashboard",
-        "summary": "Dashboard to report incidents written in Java"
+        "summary": "Dashboard to report incidents",
+        "techs": ["Spring Boot", "ThymeLeaf", "MariaDB", "Java"]
     },
     {
         "name": "Memory Game",
         "url": "http://hugotiburtino-memorygame.s3-website.eu-central-1.amazonaws.com/",
         "srcCodeUrl": "https://github.com/hugotiburtino/memorygame",
-        "summary": "Classical memory game written in vanilla JS"
+        "summary": "Classical memory game",
+        "techs": ["JavaScript", "Jasmine", "AWS"]
     },
     {
         "name": "jamra",
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/jamra",
-        "summary": "Just Another Mock Rest API - programmed with Flask"
+        "summary": "Just Another Mock Rest API",
+        "techs": ["Flask", "Python"]
     }
 ]
