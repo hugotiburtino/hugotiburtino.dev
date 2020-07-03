@@ -4,7 +4,7 @@
         <div class="row d-flex justify-content-center">
             <mat-list-item class="d-flex justify-content-center" 
             role="listitem">{{item.key}}</mat-list-item>
-            <mat-chip-list selectable="false">
+            <mat-chip-list class="col-sm-12 d-flex justify-content-center" selectable="false">
                 <mat-chip color="primary" selected disableRipple="true" *ngFor="let skill of item.value">
                     {{skill.subject}}
                 </mat-chip>

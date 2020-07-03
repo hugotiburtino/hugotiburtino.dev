@@ -15,3 +15,7 @@ h2 {
 .mat-chip:not(.mat-chip-disabled):active {
     box-shadow: none;
 }
+
+.mat-chip-list {
+    margin: 0 1em 0 1em;
+}
