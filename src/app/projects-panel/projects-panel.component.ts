@@ -13,6 +13,8 @@ import { ProjectsService } from '../services/projects.service';
 })
 export class ProjectsPanelComponent implements OnInit {
 
+  title = 'Personal Projects';
+
   /** List of current projects */
   projects: Project[];
 
