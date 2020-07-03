@@ -7,3 +7,11 @@ h2 {
     padding: 2em 0 2em;
     background-color: #cccccc
 }
+
+.mat-chip::after {
+    background-color: var(--indigo);
+}
+
+.mat-chip:not(.mat-chip-disabled):active {
+    box-shadow: none;
+}
