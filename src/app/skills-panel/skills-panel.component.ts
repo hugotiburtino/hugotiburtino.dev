@@ -10,6 +10,7 @@ import { SkillCategory } from '../lib/skill-category.enum';
 })
 export class SkillsPanelComponent implements OnInit {
 
+  title = 'Programming Skills';
   skills: Skill[];
   category = SkillCategory;
   /** Map of skills
@@ -26,7 +27,6 @@ export class SkillsPanelComponent implements OnInit {
       this.categorize();
     });
   }
-  // TODO: DOCSTRING
   /**
    * Method that fills up the Map of skills
    */
