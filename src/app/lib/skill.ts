@@ -6,7 +6,7 @@ export class Skill {
     subject: string;
     categories: SkillCategory[];
 
-    constructor(subject: string, categories?: number[]) {
+    constructor(subject: string, categories?: SkillCategory[]) {
         this.subject = subject;
         this.categories = categories;
     }

@@ -5,59 +5,117 @@
     "status": "Embracing DevOps",
     "skills": [
         {
-            "subject": "Java"
+            "subject": "Java",
+            "categories": ["Programming Language"]
         },
         {
-            "subject": "Python 3"
+            "subject": "Spring Boot",
+            "categories": ["Back-end"]
         },
         {
-            "subject": "JavaScript"
+            "subject": "ThymeLeaf",
+            "categories": ["Front-end"]
+        },
+        {
+            "subject": "Python 3",
+            "categories": ["Programming Language"]
+        },
+        {
+            "subject": "Flask",
+            "categories": ["Back-end"]
+        },
+        {
+            "subject": "JavaScript",
+            "categories": ["Programming Language"]
         },
         {
             "subject": "HTML5",
-            "categories": [1]
+            "categories": ["Front-end"]
         },
         {
             "subject": "CSS3",
-            "categories": [1]
+            "categories": ["Front-end"]
+        },
+        {
+            "subject": "Bootstrap 4",
+            "categories": ["Front-end"]
+        },
+        {
+            "subject": "Node.js",
+            "categories": ["Back-end"]
+        },
+        {
+            "subject": "Angular",
+            "categories": ["Front-end"]
         },
         {
             "subject": "Linux"
         },
         {
-            "subject": "Spring Boot",
-            "categories": [0]
+            "subject": "MuleSoft",
+            "categories": ["Back-end"]
         },
         {
-            "subject": "Flask",
-            "categories": [0]
+            "subject": "RESTful API",
+            "categories": ["Back-end"]
         },
         {
-            "subject": "MuleSoft"
+            "subject": "Docker",
+            "categories": ["CI/CD"]
         },
         {
-            "subject": "Docker"
+            "subject": "Jenkins",
+            "categories": ["CI/CD"]
         },
         {
-            "subject": "Jenkins"
+            "subject": "Git",
+            "categories": ["CI/CD"]
         },
         {
-            "subject": "RESTful API"
+            "subject": "AWS Cloud",
+            "categories": ["CI/CD"]
         },
         {
-            "subject": "Git"
+            "subject": "Responsive Web Design",
+            "categories": ["Front-end"]
         },
         {
-            "subject": "Bootstrap 4",
-            "categories": [1]
+            "subject": "ARIA",
+            "categories": ["Front-end"]
         },
         {
-            "subject": "Node.js",
-            "categories": [0]
+            "subject": "MySQL/MariaDB",
+            "categories": ["DBMS"]
         },
         {
-            "subject": "Angular",
-            "categories": [1]
+            "subject": "PostgreSQL",
+            "categories": ["DBMS"]
+        },
+        {
+            "subject": "TypeScript"
+        },
+        {
+            "subject": "Jasmine",
+            "categories": ["TDD"]
+        },
+        {
+            "subject": "JUnit",
+            "categories": ["TDD"]
+        },
+        {
+            "subject": "Scrum",
+            "categories": ["Best Practices"]
+        },
+        {
+            "subject": "DevOps",
+            "categories": ["Best Practices"]
+        },
+        {
+            "subject": "TDD",
+            "categories": ["Best Practices"]
+        },        {
+            "subject": "Clean coding",
+            "categories": ["Best Practices"]
         }
     ]
 }
