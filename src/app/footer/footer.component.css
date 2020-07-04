@@ -7,6 +7,7 @@ p {
     font-style: italic;
     font-size: 0.7em;
     float: right;
+    margin-right: 1em;
 }
 
 a {
