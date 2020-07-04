@@ -26,13 +26,13 @@
         "url": "http://hugotiburtino-memorygame.s3-website.eu-central-1.amazonaws.com/",
         "srcCodeUrl": "https://github.com/hugotiburtino/memorygame",
         "summary": "Classical memory game",
-        "techs": ["JavaScript", "Jasmine", "AWS"]
+        "techs": ["JavaScript", "Node.js", "AWS"]
     },
     {
         "name": "jamra",
         "url": "",
         "srcCodeUrl": "https://github.com/hugotiburtino/jamra",
         "summary": "Just Another Mock Rest API",
-        "techs": ["Flask", "Python"]
+        "techs": ["Flask", "Python", "RESTful API"]
     }
 ]

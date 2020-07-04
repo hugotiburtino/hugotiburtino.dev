@@ -49,7 +49,8 @@
             "categories": ["Front-end"]
         },
         {
-            "subject": "Linux"
+            "subject": "Linux",
+            "categories": ["CI/CD"]
         },
         {
             "subject": "RESTful API",
@@ -88,7 +89,16 @@
             "categories": ["DBMS"]
         },
         {
-            "subject": "TypeScript"
+            "subject": "TypeScript",
+            "categories": ["Programming Language"]
+        },
+        {
+            "subject": "Bash",
+            "categories": ["Programming Language"]
+        },
+        {
+            "subject": "C",
+            "categories": ["Programming Language"]
         },
         {
             "subject": "Jasmine",
