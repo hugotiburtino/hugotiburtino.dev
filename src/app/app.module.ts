@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { IdRefPipe } from './lib/idref.pipe';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
     HeaderComponent,
     IdRefPipe,
     AboutmeComponent,
-    SkillsPanelComponent
+    SkillsPanelComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
