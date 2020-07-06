@@ -6,8 +6,8 @@ describe('IdRefPipe', () => {
     expect(pipe).toBeTruthy();
   });
   it('should return a value with # at the begining', () => {
-    // IMPLEMENT ME
     const pipe = new IdRefPipe();
-    expect(pipe).toBeTruthy();
+    expect(pipe.transform('contact')).toEqual('#contact');
+    expect(pipe.transform('projects-panel')).toEqual('#projects-panel');
   });
 });
