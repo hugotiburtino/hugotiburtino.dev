@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 
 import { AboutmeService } from './aboutme.service';
+import { Aboutme } from '../lib/aboutme';
+import { SkillCategory } from '../lib/skill-category.enum';
+import { defer } from 'rxjs';
 
 describe('AboutmeService', () => {
   let service: AboutmeService;
@@ -16,17 +19,26 @@ describe('AboutmeService', () => {
   });
 
   it('should return expected about me info (HttpClient called once)', () => {
-  //   const expectedHeroes: Hero[] =
-  //     [{ id: 1, name: 'A' }, { id: 2, name: 'B' }];
+     const expectedAboutme: Aboutme = { 
+       completeName: "Developer", 
+       city: "Devland",
+       elevatorPitch: "I'm good",
+       status: "Being modest",
+       skills: [
+          {
+            subject: "Development", 
+            categories: [SkillCategory.BestPractices] 
+          }
+        ]
+      }
+    httpClientSpy.get.and.returnValue(asyncData(expectedAboutme));
 
-  //   httpClientSpy.get.and.returnValue(asyncData(expectedHeroes));
-
-  //   heroService.getHeroes().subscribe(
-  //     heroes => expect(heroes).toEqual(expectedHeroes, 'expected heroes'),
-  //     fail
-  //   );
-  //   expect(httpClientSpy.get.calls.count()).toBe(1, 'one call');
-  // });
+    service.getAboutme().subscribe(
+      data => expect(data.completeName).toEqual("Developer"),
+      fail
+    );
+    expect(httpClientSpy.get.calls.count()).toBe(1, 'one call');
+  });
 
   // it('should return an error when the server returns a 404', () => {
   //   const errorResponse = new HttpErrorResponse({
@@ -40,5 +52,8 @@ describe('AboutmeService', () => {
   //     heroes => fail('expected an error, not heroes'),
   //     error  => expect(error.message).toContain('test 404 error')
   //   );
-   });
+  //  });
 });
+function asyncData<T>(data: T) {
+  return defer(() => Promise.resolve(data));
+}
