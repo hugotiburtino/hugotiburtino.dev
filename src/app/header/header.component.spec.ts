@@ -24,13 +24,13 @@ describe('HeaderComponent', () => {
   });
 
   it(`should have as title 'Hugo Tiburtino'`, () => {
-    // component = fixture.componentInstance;
+    component = fixture.componentInstance;
     expect(component.title).toEqual('Hugo Tiburtino');
   });
 
   it('should render title', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Hugo Tiburtino Developer Page');
+    expect(compiled.querySelector('h1').textContent).toContain('Hugo Tiburtino');
   });
 });
