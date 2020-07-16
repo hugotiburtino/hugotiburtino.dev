@@ -22,10 +22,12 @@ export class SkillsPanelComponent implements OnInit {
   constructor(private service: AboutmeService) { }
 
   ngOnInit(): void {
-    this.service.getAboutme().subscribe(data => {
-      this.skills = data.skills;
-      this.categorize();
-    });
+    this.service.getAboutme().subscribe(
+      data => {
+        this.skills = data.skills;
+        this.categorize();
+      }, err => console.error('Error occurred while fetching projects data: ', err)
+    );
   }
   /**
    * Method that fills up the Map of skills

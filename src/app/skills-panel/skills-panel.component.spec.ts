@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule} from '@angular/common/http/testing';
 import { SkillsPanelComponent } from './skills-panel.component';
 import { AboutmeService } from '../services/aboutme.service';
-import { of } from 'rxjs/'
+import { of } from 'rxjs/';
 
 describe('SkillsPanelComponent', () => {
   let component: SkillsPanelComponent;
@@ -32,6 +32,6 @@ describe('SkillsPanelComponent', () => {
 
 class MockAboutmeService {
   getAboutme() {
-    return of({ "skills": ["testing Angular"]})
+    return of({ skills: ['testing Angular']});
   }
 }

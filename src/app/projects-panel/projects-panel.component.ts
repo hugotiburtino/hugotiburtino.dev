@@ -26,9 +26,10 @@ export class ProjectsPanelComponent implements OnInit {
 
   ngOnInit(): void {
     // Get projects from ProjectService and add them to projects list
-    this.service.getProjects().subscribe(projectsData => {
-      this.projects = projectsData;
-    });
+    this.service.getProjects().subscribe(
+      projectsData => this.projects = projectsData,
+      err => console.error('Error occurred while fetching projects data: ', err)
+    ); // TODO: better error handling
   }
 
   /**

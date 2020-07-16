@@ -1,5 +1,7 @@
 # code to the master branch
 /prod
+/src/assets/aboutme.json
+src/assets/projects.json
 
 # compiled output
 /dist

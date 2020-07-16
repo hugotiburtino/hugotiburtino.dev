@@ -1,3 +1,5 @@
 export const environment = {
-  production: false
+  production: false,
+  aboutmeUrl: '../../assets/aboutme.json',
+  projectsUrl: '../../assets/projects.json'
 };
