@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AboutmeService {
 
-  dataUrl = environment.aboutmeUrl
+  dataUrl = environment.aboutmeUrl;
   constructor(private http: HttpClient) { }
 
   /**
