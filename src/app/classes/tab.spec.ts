@@ -1,4 +1,4 @@
-import { Tab } from './tab.class';
+import { Tab } from './tab';
 
 describe('Tab', () => {
   it('should create an instance', () => {

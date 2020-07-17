@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../lib/project.class';
-import { ProjectsService } from '../services/projects.service';
+import { PersonalProject } from '../../classes/personal-project';
+import { ProjectsService } from '../../services/projects.service';
 
 /**
  * Component that is responsable for displaying data
@@ -16,7 +16,7 @@ export class ProjectsPanelComponent implements OnInit {
   title = 'Personal Projects';
 
   /** List of current projects */
-  projects: Project[];
+  projects: PersonalProject[];
 
   /**
    * @param ProjectsService service that provides info

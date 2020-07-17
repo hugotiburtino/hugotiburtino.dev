@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tab } from '../lib/tab.class';
+import { Tab } from '../../classes/tab';
 
 @Component({
   selector: 'app-navbar',

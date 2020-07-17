@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule} from '@angular/common/http/testing';
 import { SkillsPanelComponent } from './skills-panel.component';
-import { AboutmeService } from '../services/aboutme.service';
+import { AboutmeService } from '../../services/aboutme.service';
 import { of } from 'rxjs/';
 
 describe('SkillsPanelComponent', () => {

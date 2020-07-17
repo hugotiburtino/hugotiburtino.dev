@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Skill } from '../lib/skill';
-import { Aboutme } from '../lib/aboutme';
+import { Skill } from '../classes/skill';
+import { Aboutme } from '../classes/aboutme';
 import { environment } from 'src/environments/environment';
 
 @Injectable({

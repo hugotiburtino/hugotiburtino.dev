@@ -1,4 +1,4 @@
-import { SkillCategory } from './skill-category.enum';
+import { SkillCategory } from '../lib/skill-category.enum';
 
 
 export class Skill {

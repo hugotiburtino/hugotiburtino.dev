@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutmeService } from '../services/aboutme.service';
-import { Skill } from '../lib/skill';
-import { SkillCategory } from '../lib/skill-category.enum';
+import { AboutmeService } from '../../services/aboutme.service';
+import { Skill } from '../../classes/skill';
+import { SkillCategory } from '../../lib/skill-category.enum';
 
 @Component({
   selector: 'app-skills-panel',
