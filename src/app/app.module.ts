@@ -7,14 +7,15 @@ import { AppRoutingModule } from './submodules/app-routing.module';
 import { MaterialModule } from './submodules/material.module';
 
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { ProjectsPanelComponent } from './projects-panel/projects-panel.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsPanelComponent } from './components/projects-panel/projects-panel.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/header/header.component';
 import { IdRefPipe } from './lib/idref.pipe';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { SkillsPanelComponent } from './components/skills-panel/skills-panel.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ThirdPartyPanelComponent } from './components/third-party-panel/third-party-panel.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     IdRefPipe,
     AboutmeComponent,
     SkillsPanelComponent,
-    ContactComponent
+    ContactComponent,
+    ThirdPartyPanelComponent
   ],
   imports: [
     BrowserModule,

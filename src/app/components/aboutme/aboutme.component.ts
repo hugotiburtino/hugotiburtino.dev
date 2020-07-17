@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutmeService } from '../services/aboutme.service';
+import { AboutmeService } from '../../services/aboutme.service';
 
 @Component({
   selector: 'app-aboutme',
