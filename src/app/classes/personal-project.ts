@@ -2,10 +2,10 @@ import { Project } from './project';
 
 export class PersonalProject extends Project {
 
-  isPersonal?: boolean
+  isPersonal?: boolean;
 
   constructor(name: string, url?: string, srcCodeUrl?: string,
-    summary?: string, techs?: string[], isPersonal?: boolean) {
+              summary?: string, techs?: string[], isPersonal?: boolean) {
     super(name, url, srcCodeUrl, summary, techs);
     this.isPersonal = isPersonal;
   }
