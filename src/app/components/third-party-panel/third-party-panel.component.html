@@ -1,26 +1,25 @@
 <div class="container">
-  <h2>{{title}}</h2>
-  <div class="row d-flex justify-content-center">
-    <ng-container *ngFor="let proj of projects">
-    <mat-card class="project-card" *ngIf="!proj.isPersonal">
-        <mat-card-header>
-          <mat-card-title>{{proj.name}}</mat-card-title>
-          <mat-card-subtitle>{{proj.summary}}</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <mat-chip-list selectable="false">
-            <mat-chip disableRipple="true" *ngFor="let tech of proj.techs">
-              {{tech}}
-            </mat-chip>
-          </mat-chip-list>
-        </mat-card-content>
-        <mat-card-actions>
-          <button value="0" *ngIf="proj.url" role="link"
-          matTooltip="See it in production" mat-button>See</button>
-          <!--button value="1" role="link" matTooltip="" mat-button>Info</button-->
-          <button value="2" matTooltip="See source code repo" mat-button>Source Code</button>
-        </mat-card-actions>
-      </mat-card>
-    </ng-container>
-  </div>
+  <h2>{{heading}}</h2>
+  <ng-container *ngFor="let proj of projects">
+    <div class="jumbotron" *ngIf="!proj.isPersonal">
+      <h3 matLine>{{proj.name}}</h3>
+      <p matLine>{{proj.summary}}</p>
+      <mat-chip-list selectable="false">
+        <mat-chip disableRipple="true" *ngFor="let tech of proj.techs">
+          {{tech}}
+        </mat-chip>
+      </mat-chip-list>
+      <mat-list role="list">
+        <h4 mat-subheader>Roles in project</h4>
+        <mat-list-item *ngFor="let role of proj.roles" role="listitem">
+          <div mat-line>{{role}}</div>
+        </mat-list-item>
+      </mat-list>
+      <mat-action-list (click)="onClick($event.target, proj)">
+        <button value="0" *ngIf="proj.url" role="link" matTooltip="See it in production" mat-button>See</button>
+        <button value="2" *ngIf="proj.srcCodeUrl" matTooltip="See repo" mat-button>Source Code</button>
+      </mat-action-list>
+    </div>
+    <mat-divider></mat-divider>
+  </ng-container>
 </div>

@@ -1,25 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from 'src/app/services/projects.service';
-import { Project } from 'src/app/classes/project';
+import { ThirdPartyProject } from 'src/app/classes/third-party-project';
+import { ProjectsPanelComponent } from '../projects-panel/projects-panel.component';
 
 @Component({
   selector: 'app-third-party-panel',
   templateUrl: './third-party-panel.component.html',
   styleUrls: ['./third-party-panel.component.css']
 })
-export class ThirdPartyPanelComponent implements OnInit {
+export class ThirdPartyPanelComponent extends ProjectsPanelComponent {
 
-  title = "At Third Party's Projects"
+  heading = 'At Third Party\'s Projects';
 
-  projects: Project[];
+  projects: ThirdPartyProject[];
 
-  constructor(private service: ProjectsService) { }
-
-  ngOnInit(): void {
-    this.service.getProjects().subscribe(
-      (data) => this.projects = data.filter((proj) => !(proj as any).isPersonal),
-      err => console.error('Error occurred while fetching projects data: ', err)
-    ); // TODO: better error handling
+  constructor(service: ProjectsService) {
+    super(service);
   }
-
 }
