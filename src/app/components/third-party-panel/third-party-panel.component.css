@@ -1,0 +1,13 @@
+
+.mat-chip {
+  font-size: 0.8em;
+  min-height: 24px;
+}
+
+.mat-chip::after {
+  background-color: #e0e0e0;
+}
+
+.mat-chip:not(.mat-chip-disabled):active {
+  box-shadow: none;
+}
