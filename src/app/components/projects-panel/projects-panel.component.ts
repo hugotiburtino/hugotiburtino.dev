@@ -13,7 +13,7 @@ import { ProjectsService } from '../../services/projects.service';
 })
 export class ProjectsPanelComponent implements OnInit {
 
-  title = 'Personal Projects';
+  heading = 'Personal Projects';
 
   /** List of current projects */
   projects: PersonalProject[];
@@ -22,18 +22,20 @@ export class ProjectsPanelComponent implements OnInit {
    * @param ProjectsService service that provides info
    * to fill up the projects list
    */
-  constructor(private service: ProjectsService) { }
+  constructor(public service: ProjectsService) { }
 
   ngOnInit(): void {
     // Get projects from ProjectService and add them to projects list
     this.service.getProjects().subscribe(
       projectsData => this.projects = projectsData,
-      err => console.error('Error occurred while fetching projects data: ', err)
+      err => {
+        console.error('Error occurred while fetching projects data: ', err);
+      }
     ); // TODO: better error handling
   }
 
   /**
-   * Handles the action button clicks of a project card
+   * Handles the action button clicks
    * @param target The button clicked
    * @param project The project whose card button was clicked
    */
@@ -47,7 +49,7 @@ export class ProjectsPanelComponent implements OnInit {
     if (value === SEE) {
       window.open(project.url, '_blank').focus();
     } else if (value === INFO) {
-      // Implementme
+      // TODO
     } else if (value === SOURCE_CODE) {
       window.open(project.srcCodeUrl, '_blank').focus();
     }

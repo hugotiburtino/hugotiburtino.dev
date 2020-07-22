@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>{{title}}</h2>
+  <h2>{{heading}}</h2>
   <div class="row d-flex justify-content-center">
     <ng-container *ngFor="let proj of projects">
     <mat-card class="project-card" *ngIf="proj.isPersonal">
@@ -18,7 +18,7 @@
           <button value="0" *ngIf="proj.url" role="link"
           matTooltip="See it in production" mat-button>See</button>
           <!--button value="1" role="link" matTooltip="" mat-button>Info</button-->
-          <button value="2" matTooltip="See source code repo" mat-button>Source Code</button>
+          <button value="2" matTooltip="See repo" mat-button>Source Code</button>
         </mat-card-actions>
       </mat-card>
     </ng-container>
