@@ -4,6 +4,6 @@ export class ThirdPartyProject extends Project{
 
   thirdParty: string;
   description: string;
-  rolesInProject: string[];
+  roles: string[];
 
 }
