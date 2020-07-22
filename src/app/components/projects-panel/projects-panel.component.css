@@ -3,12 +3,6 @@
     width: 25em;
 }
 
-h2 {
-    margin-top: 2em;
-    text-align: center;
-    justify-content: center;
-}
-
 .mat-chip {
     font-size: 0.8em;
     min-height: 24px;

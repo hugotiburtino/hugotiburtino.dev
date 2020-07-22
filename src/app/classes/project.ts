@@ -8,7 +8,7 @@ export abstract class Project {
   techs: string[];
 
   constructor(name: string, url?: string, srcCodeUrl?: string,
-    summary?: string, techs?: string[]) {
+              summary?: string, techs?: string[]) {
       this.name = name;
       this.url = url;
       this.srcCodeUrl = srcCodeUrl;
